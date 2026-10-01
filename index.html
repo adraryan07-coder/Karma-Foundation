@@ -4,149 +4,2156 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Karma Foundation | Helping People • Changing Lives</title>
+<title>Karma Foundation | कर्मा फाउंडेशन</title>
 
 <style>
+
+/* =====================================================
+   KARMA FOUNDATION
+   BILINGUAL DONATION WEBSITE
+   ===================================================== */
+
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-html{scroll-behavior:smooth}
+html{
+    scroll-behavior:smooth;
+}
 
 body{
-  background:#f7faf8;
-  color:#173b2c;
-  line-height:1.6;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7fbf9;
+    color:#18372a;
+    line-height:1.6;
 }
+
+button,
+a{
+    -webkit-tap-highlight-color:transparent;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
 
 header{
-  background:#fff;
-  padding:14px 6%;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  position:sticky;
-  top:0;
-  z-index:1000;
-  box-shadow:0 2px 15px #00000012;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,0.96);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid #e6eee9;
 }
 
-.logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
+.header-inner{
+    max-width:1200px;
+    margin:auto;
+    padding:14px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
 }
 
-.logo-icon{
-  font-size:40px;
+.brand{
+    text-decoration:none;
+    color:#075d3b;
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
-.logo h1{
-  font-size:22px;
-  color:#087443;
+.brand-symbol{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#08a968,#05643e);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    box-shadow:0 7px 20px rgba(0,120,75,.22);
 }
 
-.logo p{
-  font-size:11px;
-  color:#666;
+.brand-text{
+    text-align:left;
+}
+
+.brand-title{
+    font-size:21px;
+    font-weight:900;
+    letter-spacing:1px;
+}
+
+.brand-subtitle{
+    font-size:11px;
+    color:#6c7b74;
+    margin-top:1px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:7px;
 }
 
 nav a{
-  text-decoration:none;
-  color:#173b2c;
-  margin:0 9px;
-  font-weight:bold;
-  font-size:14px;
+    text-decoration:none;
+    color:#264338;
+    padding:9px 12px;
+    font-size:13px;
+    font-weight:700;
+    border-radius:20px;
 }
 
-.donate-top{
-  background:#ff5a4f;
-  color:white!important;
-  padding:11px 18px;
-  border-radius:25px;
+nav a:hover{
+    background:#eaf8f1;
+    color:#078052;
 }
+
+.nav-donate{
+    background:#ff5b55 !important;
+    color:white !important;
+    padding:11px 18px !important;
+    box-shadow:0 6px 18px rgba(255,91,85,.22);
+}
+
+
+/* =========================
+   HERO
+   ========================= */
 
 .hero{
-  min-height:540px;
-  padding:70px 7%;
-  display:flex;
-  align-items:center;
-  color:white;
-  background:
-  linear-gradient(90deg,#064c35dd,#064c3566),
-  url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1800&q=85");
-  background-size:cover;
-  background-position:center;
+    min-height:650px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(3,57,39,.93) 0%,
+        rgba(3,70,46,.78) 48%,
+        rgba(3,70,46,.32) 100%
+    ),
+    url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=2000&q=85");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-inner{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+    color:white;
 }
 
 .hero-content{
-  max-width:650px;
+    max-width:720px;
 }
 
-.badge{
-  display:inline-block;
-  background:#ffffff22;
-  border:1px solid #ffffff66;
-  padding:7px 15px;
-  border-radius:20px;
-  margin-bottom:18px;
+.hero-tag{
+    display:inline-block;
+    padding:8px 15px;
+    border:1px solid rgba(255,255,255,.4);
+    background:rgba(255,255,255,.1);
+    border-radius:30px;
+    font-size:13px;
+    margin-bottom:20px;
 }
 
-.hero h2{
-  font-size:48px;
-  line-height:1.1;
-  margin-bottom:12px;
+.hero-title{
+    font-size:58px;
+    line-height:1.05;
+    font-weight:900;
+    margin-bottom:18px;
 }
 
-.hero h3{
-  color:#ffd35a;
-  font-size:32px;
-  margin-bottom:15px;
+.hero-title span{
+    color:#ffd65a;
 }
 
-.hero p{
-  font-size:18px;
+.hero-hindi{
+    font-size:27px;
+    font-weight:800;
+    margin-bottom:16px;
+    color:#ffffff;
 }
 
-.btn{
-  display:inline-block;
-  margin-top:25px;
-  padding:14px 28px;
-  background:#0aaa69;
-  color:white;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:bold;
-  border:0;
-  cursor:pointer;
-  font-size:16px;
+.hero-description{
+    font-size:18px;
+    color:#edf9f4;
+    max-width:650px;
 }
 
-section{
-  max-width:1150px;
-  margin:auto;
-  padding:65px 20px;
+.hero-buttons{
+    display:flex;
+    gap:13px;
+    flex-wrap:wrap;
+    margin-top:28px;
 }
 
-.title{
-  text-align:center;
-  margin-bottom:35px;
+.primary-btn,
+.secondary-btn{
+    border:none;
+    text-decoration:none;
+    padding:14px 25px;
+    border-radius:30px;
+    font-weight:800;
+    font-size:15px;
+    cursor:pointer;
+    display:inline-block;
 }
 
-.title h2{
-  font-size:34px;
-  color:#075e3a;
+.primary-btn{
+    background:#0bb574;
+    color:white;
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
 }
 
-.title p{
-  color:#666;
+.primary-btn:hover{
+    background:#099c64;
+    transform:translateY(-2px);
 }
 
-.donation{
-  background:white;
-  border-radius:22px;
-  padding:30px;
-  box-shadow:0 8px 30px #0000000
+.secondary-btn{
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.45);
+    color:white;
+}
+
+
+/* =========================
+   COMMON SECTION
+   ========================= */
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:75px 20px;
+}
+
+.section-heading{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 42px;
+}
+
+.section-heading .small{
+    color:#07915d;
+    font-weight:800;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+}
+
+.section-heading h2{
+    font-size:38px;
+    color:#075d3b;
+    margin:7px 0;
+}
+
+.section-heading p{
+    color:#6c7973;
+}
+
+
+/* =========================
+   IMPACT
+   ========================= */
+
+.impact-box{
+    background:linear-gradient(135deg,#e7f8ef,#f7fffb);
+    border:1px solid #d7eee2;
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 12px 35px rgba(0,70,40,.06);
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.stat{
+    background:white;
+    border-radius:18px;
+    padding:25px 15px;
+    text-align:center;
+    border:1px solid #e7eee9;
+}
+
+.stat-icon{
+    font-size:28px;
+}
+
+.stat-number{
+    font-size:32px;
+    font-weight:900;
+    color:#078052;
+    margin:5px 0;
+}
+
+.stat-title{
+    font-weight:800;
+    color:#244438;
+}
+
+.stat-hindi{
+    font-size:12px;
+    color:#77837e;
+}
+
+
+/* =========================
+   CAUSES
+   ========================= */
+
+.causes{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.cause-card{
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    border:1px solid #e4ece7;
+    box-shadow:0 8px 30px rgba(0,50,30,.07);
+    transition:.25s ease;
+    cursor:pointer;
+}
+
+.cause-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 15px 40px rgba(0,90,55,.14);
+}
+
+.cause-image{
+    height:210px;
+    overflow:hidden;
+    position:relative;
+}
+
+.cause-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.35s ease;
+}
+
+.cause-card:hover .cause-image img{
+    transform:scale(1.06);
+}
+
+.cause-badge{
+    position:absolute;
+    top:14px;
+    left:14px;
+    background:white;
+    color:#075d3b;
+    padding:7px 11px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:800;
+}
+
+.cause-body{
+    padding:21px;
+}
+
+.cause-body h3{
+    color:#075d3b;
+    font-size:20px;
+    margin-bottom:2px;
+}
+
+.cause-hindi{
+    color:#078052;
+    font-weight:700;
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+.cause-body p{
+    color:#6c7772;
+    font-size:14px;
+}
+
+.help-button{
+    width:100%;
+    margin-top:15px;
+    padding:11px;
+    border:none;
+    background:#e9f8f1;
+    color:#06784d;
+    border-radius:12px;
+    font-weight:800;
+    cursor:pointer;
+}
+
+.help-button:hover{
+    background:#078052;
+    color:white;
+}
+
+
+/* =========================
+   DONATION SECTION
+   ========================= */
+
+.donation-section{
+    background:#063e2b;
+    color:white;
+    max-width:none;
+}
+
+.donation-wrapper{
+    max-width:1200px;
+    margin:auto;
+    padding:75px 20px;
+}
+
+.donation-heading{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.donation-heading h2{
+    font-size:40px;
+}
+
+.donation-heading p{
+    color:#cce7dc;
+}
+
+.donation-grid{
+    display:grid;
+    grid-template-columns:1fr 390px;
+    gap:30px;
+    align-items:stretch;
+}
+
+.donation-card{
+    background:white;
+    color:#18372a;
+    border-radius:25px;
+    padding:30px;
+}
+
+.donation-card h3{
+    color:#075d3b;
+    font-size:26px;
+}
+
+.donation-card .hindi{
+    color:#078052;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.amount-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+.amount-btn{
+    background:#f3faf7;
+    border:2px solid #dcefe6;
+    border-radius:14px;
+    padding:16px 5px;
+    cursor:pointer;
+    color:#075d3b;
+    font-weight:900;
+}
+
+.amount-btn:hover{
+    border-color:#08a968;
+    background:#e6f8ef;
+}
+
+.amount-btn strong{
+    display:block;
+    font-size:21px;
+}
+
+.amount-btn span{
+    font-size:10px;
+    color:#718079;
+}
+
+.custom-box{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.custom-box input{
+    width:100%;
+    border:1px solid #ccdcd4;
+    padding:14px;
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+}
+
+.custom-box button{
+    border:none;
+    background:#078052;
+    color:white;
+    padding:0 20px;
+    border-radius:12px;
+    font-weight:800;
+    cursor:pointer;
+}
+
+
+/* =========================
+   QR CARD
+   ========================= */
+
+.qr-card{
+    background:white;
+    color:#18372a;
+    border-radius:25px;
+    padding:28px;
+    text-align:center;
+}
+
+.qr-card h3{
+    color:#075d3b;
+}
+
+.qr-card p{
+    color:#718079;
+    font-size:13px;
+}
+
+.qr-container{
+    width:210px;
+    height:210px;
+    margin:18px auto;
+    padding:10px;
+    border-radius:18px;
+    background:white;
+    box-shadow:0 5px 25px rgba(0,0,0,.1);
+}
+
+.qr-container img{
+    width:100%;
+    height:100%;
+}
+
+.upi-box{
+    background:#f1f8f4;
+    border:1px dashed #0a8a59;
+    border-radius:12px;
+    padding:11px;
+    font-size:13px;
+}
+
+.upi-box strong{
+    color:#075d3b;
+}
+
+.secure-text{
+    margin-top:12px;
+    font-size:11px;
+    color:#75837d;
+}
+
+
+/* =========================
+   ABOUT
+   ========================= */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about-image{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,50,30,.12);
+}
+
+.about-content h2{
+    color:#075d3b;
+    font-size:38px;
+}
+
+.about-content h3{
+    color:#078052;
+    margin-bottom:15px;
+}
+
+.about-content p{
+    color:#66736d;
+    margin-bottom:15px;
+}
+
+.quote{
+    border-left:4px solid #0aaa69;
+    padding:15px 18px;
+    background:#effaf5;
+    border-radius:0 12px 12px 0;
+    color:#315449;
+    font-weight:700;
+}
+
+
+/* =========================
+   HOW IT WORKS
+   ========================= */
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.step{
+    background:white;
+    border:1px solid #e4ece7;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+}
+
+.step-number{
+    width:55px;
+    height:55px;
+    margin:0 auto 15px;
+    border-radius:50%;
+    background:#e6f8ef;
+    color:#078052;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    font-weight:900;
+}
+
+.step h3{
+    color:#075d3b;
+}
+
+
+/* =========================
+   FINAL CTA
+   ========================= */
+
+.final-cta{
+    margin:0 auto 70px;
+    max-width:1160px;
+    border-radius:28px;
+    padding:55px 25px;
+    text-align:center;
+    color:white;
+    background:
+    linear-gradient(135deg,#087b50,#06452f);
+}
+
+.final-cta h2{
+    font-size:38px;
+}
+
+.final-cta p{
+    color:#d9eee6;
+    max-width:700px;
+    margin:10px auto;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer{
+    background:#032c1f;
+    color:white;
+    text-align:center;
+    padding:45px 20px;
+}
+
+footer h2{
+    font-size:25px;
+}
+
+footer p{
+    color:#b9d5ca;
+    font-size:13px;
+    margin-top:5px;
+}
+
+.footer-line{
+    width:80px;
+    height:3px;
+    background:#0aaa69;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+
+/* =========================
+   PAYMENT MODAL
+   ========================= */
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.72);
+    z-index:5000;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.modal.show{
+    display:flex;
+}
+
+.modal-box{
+    width:100%;
+    max-width:430px;
+    background:white;
+    border-radius:25px;
+    padding:28px;
+    text-align:center;
+    position:relative;
+    animation:popup .2s ease;
+}
+
+@keyframes popup{
+    from{
+        opacity:0;
+        transform:scale(.9);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.close-modal{
+    position:absolute;
+    top:12px;
+    right:15px;
+    border:none;
+    background:#f1f3f2;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:20px;
+}
+
+.modal-box h2{
+    color:#075d3b;
+    margin-bottom:3px;
+}
+
+.modal-hindi{
+    color:#078052;
+    font-weight:700;
+}
+
+.modal-cause{
+    margin:15px 0;
+    padding:10px;
+    background:#eef9f4;
+    border-radius:10px;
+    color:#315449;
+    font-weight:700;
+}
+
+.modal-qr{
+    width:230px;
+    height:230px;
+    margin:15px auto;
+    padding:10px;
+}
+
+.modal-qr img{
+    width:100%;
+    height:100%;
+}
+
+.modal-upi{
+    background:#f3f8f5;
+    padding:12px;
+    border-radius:10px;
+    font-size:13px;
+    word-break:break-all;
+}
+
+.pay-upi{
+    width:100%;
+    margin-top:15px;
+    border:none;
+    background:#078052;
+    color:white;
+    padding:14px;
+    border-radius:12px;
+    font-weight:800;
+    font-size:15px;
+    cursor:pointer;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media(max-width:900px){
+
+    nav{
+        display:none;
+    }
+
+    .hero-title{
+        font-size:45px;
+    }
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .causes{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .donation-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .steps{
+        grid-template-columns:1fr;
+    }
+}
+
+
+@media(max-width:600px){
+
+    .header-inner{
+        padding:11px 15px;
+    }
+
+    .brand-title{
+        font-size:17px;
+    }
+
+    .brand-subtitle{
+        font-size:9px;
+    }
+
+    .brand-symbol{
+        width:40px;
+        height:40px;
+        font-size:19px;
+    }
+
+    .hero{
+        min-height:600px;
+    }
+
+    .hero-inner{
+        padding:60px 20px;
+    }
+
+    .hero-title{
+        font-size:38px;
+    }
+
+    .hero-hindi{
+        font-size:22px;
+    }
+
+    .hero-description{
+        font-size:15px;
+    }
+
+    .section{
+        padding:55px 15px;
+    }
+
+    .section-heading h2{
+        font-size:30px;
+    }
+
+    .stats{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .stat{
+        padding:18px 8px;
+    }
+
+    .stat-number{
+        font-size:25px;
+    }
+
+    .causes{
+        grid-template-columns:1fr;
+    }
+
+    .amount-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .custom-box{
+        flex-direction:column;
+    }
+
+    .custom-box button{
+        padding:13px;
+    }
+
+    .donation-card,
+    .qr-card{
+        padding:22px 16px;
+    }
+
+    .donation-heading h2{
+        font-size:31px;
+    }
+
+    .about-image{
+        height:300px;
+    }
+
+    .about-content h2{
+        font-size:30px;
+    }
+
+    .final-cta{
+        margin:0 15px 50px;
+    }
+
+    .final-cta h2{
+        font-size:30px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+     ===================================================== -->
+
+<header>
+
+<div class="header-inner">
+
+<a href="#home" class="brand">
+
+<div class="brand-symbol">
+🤝
+</div>
+
+<div class="brand-text">
+
+<div class="brand-title">
+KARMA FOUNDATION
+</div>
+
+<div class="brand-subtitle">
+Helping People • Changing Lives
+</div>
+
+</div>
+
+</a>
+
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#causes">
+Our Causes
+</a>
+
+<a href="#impact">
+Impact
+</a>
+
+<a href="#about">
+About
+</a>
+
+<a href="#donate" class="nav-donate">
+❤️ Donate Now
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+     ===================================================== -->
+
+<section class="hero" id="home">
+
+<div class="hero-inner">
+
+<div class="hero-content">
+
+<div class="hero-tag">
+🌍 Humanity First • इंसानियत सबसे पहले
+</div>
+
+<h1 class="hero-title">
+Be The Reason
+<span>Someone Smiles</span> ❤️
+</h1>
+
+<div class="hero-hindi">
+किसी की मुस्कान की वजह बनिए
+</div>
+
+<p class="hero-description">
+
+Karma Foundation works to support children,
+patients, persons with disabilities, families in need
+and people facing difficult times.
+
+<br><br>
+
+कर्मा फाउंडेशन बच्चों, मरीजों, दिव्यांगजनों,
+जरूरतमंद परिवारों और कठिन परिस्थितियों से गुजर रहे
+लोगों की सहायता के लिए काम करता है।
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a href="#donate" class="primary-btn">
+❤️ Donate Now • अभी दान करें
+</a>
+
+<a href="#causes" class="secondary-btn">
+Explore Our Causes • हमारी सेवाएं
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     IMPACT
+     ===================================================== -->
+
+<section class="section" id="impact">
+
+<div class="section-heading">
+
+<div class="small">
+Our Impact • हमारा प्रभाव
+</div>
+
+<h2>
+Together We Can Make A Difference
+</h2>
+
+<p>
+आपका छोटा सा सहयोग किसी की ज़िंदगी में बड़ा बदलाव ला सकता है।
+</p>
+
+</div>
+
+
+<div class="impact-box">
+
+<div class="stats">
+
+
+<div class="stat">
+
+<div class="stat-icon">
+👨‍👩‍👧‍👦
+</div>
+
+<div class="stat-number">
+500+
+</div>
+
+<div class="stat-title">
+People Helped
+</div>
+
+<div class="stat-hindi">
+लोगों की सहायता
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">
+📚
+</div>
+
+<div class="stat-number">
+200+
+</div>
+
+<div class="stat-title">
+Children Supported
+</div>
+
+<div class="stat-hindi">
+बच्चों की सहायता
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">
+🏥
+</div>
+
+<div class="stat-number">
+50+
+</div>
+
+<div class="stat-title">
+Medical Support
+</div>
+
+<div class="stat-hindi">
+चिकित्सा सहायता
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">
+🍲
+</div>
+
+<div class="stat-number">
+500+
+</div>
+
+<div class="stat-title">
+Meals Provided
+</div>
+
+<div class="stat-hindi">
+लोगों को भोजन
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CAUSES
+     ===================================================== -->
+
+<section class="section" id="causes">
+
+<div class="section-heading">
+
+<div class="small">
+Where Your Help Matters • आपकी मदद कहाँ पहुंचेगी
+</div>
+
+<h2>
+Our Causes
+</h2>
+
+<p>
+जिस उद्देश्य के लिए आप सहायता करना चाहते हैं,
+उस पर क्लिक करें और सीधे UPI से योगदान करें।
+<br>
+Choose a cause and support it directly through UPI.
+</p>
+
+</div>
+
+
+<div class="causes">
+
+
+<!-- FOOD -->
+
+<div class="cause-card"
+onclick="openDonation('Food For The Needy','जरूरतमंदों के लिए भोजन')">
+
+<div class="cause-image">
+
+<img
+src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=900&q=85"
+alt="Food donation">
+
+<div class="cause-badge">
+🍲 Food Support
+</div>
+
+</div>
+
+<div class="cause-body">
+
+<h3>
+Food For The Needy
+</h3>
+
+<div class="cause-hindi">
+जरूरतमंदों के लिए भोजन
+</div>
+
+<p>
+Help provide nutritious meals to hungry and underprivileged people.
+</p>
+
+<button class="help-button">
+❤️ Help With Food • भोजन में मदद करें
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- EDUCATION -->
+
+<div class="cause-card"
+onclick="openDonation('Child Education','बच्चों की शिक्षा')">
+
+<div class="cause-image">
+
+<img
+src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=85"
+alt="Child education">
+
+<div class="cause-badge">
+📚 Education
+</div>
+
+</div>
+
+<div class="cause-body">
+
+<h3>
+Child Education
+</h3>
+
+<div class="cause-hindi">
+बच्चों की शिक्षा
+</div>
+
+<p>
+Support education, books, school supplies and learning opportunities.
+</p>
+
+<button class="help-button">
+📚 Support Education • शिक्षा में मदद करें
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- CANCER -->
+
+<div class="cause-card"
+onclick="openDonation('Cancer Treatment Support','कैंसर इलाज सहायता')">
+
+<div class="cause-image">
+
+<img
+src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85"
+alt="Medical support">
+
+<div class="cause-badge">
+🎗️ Medical
+</div>
+
+</div>
+
+<div class="cause-body">
+
+<h3>
+Cancer Treatment Support
+</h3>
+
+<div class="cause-hindi">
+कैंसर इलाज सहायता
+</div>
+
+<p>
+Help families facing serious medical and cancer treatment expenses.
+</p>
+
+<button class="help-button">
+🎗️ Support Treatment • इलाज में मदद करें
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- DISABILITY -->
+
+<div class="cause-card"
+onclick="openDonation('Disability Support','दिव्यांग सहायता')">
+
+<div class="cause-image">
+
+<img
+src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=900&q=85"
+alt="Disability support">
+
+<div class="cause-badge">
+♿ Disability
+</div>
+
+</div>
+
+<div class="cause-body">
+
+<h3>
+Disability Support
+</h3>
+
+<div class="cause-hindi">
+दिव्यांग सहायता
+</div>
+
+<p>
+Support wheelchairs, mobility aids, essential kits and daily needs.
+</p>
+
+<button class="help-button">
+♿ Help A Person • सहायता करें
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- FLOOD -->
+
+<div class="cause-card"
+onclick="openDonation('Flood Relief','बाढ़ पीड़ित सहायता')">
+
+<div class="cause-image">
+
+<img
+src="https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=900&q=85"
+alt="Flood relief">
+
+<div class="cause-badge">
+🌊 Emergency Relief
+</div>
+
+</div>
+
+<div class="cause-body">
+
+<h3>
+Flood Relief
+</h3>
+
+<div class="cause-hindi">
+बाढ़ पीड़ितों की सहायता
+</div>
+
+<p>
+Help affected families with food, essential supplies and emergency support.
+</p>
+
+<button class="help-button">
+🌊 Help Flood Victims • मदद करें
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- HOMELESS -->
+
+<div class="cause-card"
+onclick="openDonation('Homeless Family Support','बेघर परिवार सहायता')">
+
+<div class="cause-image">
+
+<img
+src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=900&q=85"
+alt="Family support">
+
+<div class="cause-badge">
+🏠 Shelter
+</div>
+
+</div>
+
+<div class="cause-body">
+
+<h3>
+Homeless Family Support
+</h3>
+
+<div class="cause-hindi">
+बेघर परिवारों की सहायता
+</div>
+
+<p>
+Support vulnerable families with essential shelter and basic needs.
+</p>
+
+<button class="help-button">
+🏠 Support A Family • परिवार की मदद करें
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- EMERGENCY -->
+
+<div class="cause-card"
+onclick="openDonation('Emergency Humanitarian Help','आपातकालीन मानवीय सहायता')">
+
+<div class="cause-image">
+
+<img
+src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=900&q=85"
+alt="Humanitarian support">
+
+<div class="cause-badge">
+❤️ Humanity
+</div>
+
+</div>
+
+<div class="cause-body">
+
+<h3>
+Emergency Humanitarian Help
+</h3>
+
+<div class="cause-hindi">
+आपातकालीन मानवीय सहायता
+</div>
+
+<p>
+Help people facing genuine emergencies and difficult circumstances.
+</p>
+
+<button class="help-button">
+❤️ Provide Help • सहायता करें
+</button>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     DONATION
+     ===================================================== -->
+
+<section class="donation-section" id="donate">
+
+<div class="donation-wrapper">
+
+
+<div class="donation-heading">
+
+<h2>
+Your Contribution Can Change A Life ❤️
+</h2>
+
+<p>
+आपकी छोटी सी मदद किसी के लिए बहुत बड़ी हो सकती है।
+</p>
+
+</div>
+
+
+<div class="donation-grid">
+
+
+<div class="donation-card">
+
+<h3>
+Donate For A Cause
+</h3>
+
+<div class="hindi">
+किसी अच्छे उद्देश्य के लिए दान करें
+</div>
+
+<p>
+Select an amount or enter your own amount.
+<br>
+राशि चुनें या अपनी राशि दर्ज करें।
+</p>
+
+
+<div class="amount-grid">
+
+
+<button class="amount-btn"
+onclick="openDonation('General Support','सामान्य सहायता',100)">
+
+<strong>₹100</strong>
+<span>Small Help</span>
+
+</button>
+
+
+<button class="amount-btn"
+onclick="openDonation('General Support','सामान्य सहायता',500)">
+
+<strong>₹500</strong>
+<span>Support</span>
+
+</button>
+
+
+<button class="amount-btn"
+onclick="openDonation('General Support','सामान्य सहायता',1000)">
+
+<strong>₹1,000</strong>
+<span>Care</span>
+
+</button>
+
+
+<button class="amount-btn"
+onclick="openDonation('General Support','सामान्य सहायता',2000)">
+
+<strong>₹2,000</strong>
+<span>Impact</span>
+
+</button>
+
+
+</div>
+
+
+<div class="custom-box">
+
+<input
+type="number"
+id="customAmount"
+placeholder="Enter amount ₹ / राशि दर्ज करें"
+min="1"
+>
+
+<button onclick="customDonation()">
+Donate
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- QR -->
+
+<div class="qr-card">
+
+<h3>
+Scan & Donate
+</h3>
+
+<p>
+QR कोड स्कैन करके UPI से भुगतान करें
+</p>
+
+
+<div class="qr-container">
+
+<img
+id="mainQR"
+src=""
+alt="UPI QR Code"
+>
+
+</div>
+
+
+<div class="upi-box">
+
+<strong>UPI ID / UPI आईडी</strong>
+
+<br>
+
+<span id="mainUPI">
+YOUR-UPI-ID@upi
+</span>
+
+</div>
+
+
+<button class="primary-btn"
+style="width:100%;margin-top:15px;"
+onclick="openDonation('General Support','सामान्य सहायता')">
+
+❤️ Donate Now
+
+</button>
+
+
+<div class="secure-text">
+
+🔒 Secure UPI Payment • सुरक्षित UPI भुगतान
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+     ===================================================== -->
+
+<section class="section" id="about">
+
+<div class="about-grid">
+
+
+<div>
+
+<img
+class="about-image"
+src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1000&q=85"
+alt="Karma Foundation volunteers"
+>
+
+</div>
+
+
+<div class="about-content">
+
+<div class="section-heading"
+style="text-align:left;margin:0 0 20px;">
+
+<div class="small">
+About Us • हमारे बारे में
+</div>
+
+<h2>
+Karma Foundation
+</h2>
+
+</div>
+
+
+<h3>
+Helping People • Changing Lives
+</h3>
+
+
+<p>
+Karma Foundation is a community initiative dedicated to helping
+people who genuinely need support.
+</p>
+
+
+<p>
+कर्मा फाउंडेशन का उद्देश्य जरूरतमंद लोगों तक सहायता पहुंचाना
+और समाज में इंसानियत, सहयोग और उम्मीद को बढ़ावा देना है।
+</p>
+
+
+<div class="quote">
+
+"आप आगे बढ़ेंगे तो हम सबको साथ लेकर आगे बढ़ेंगे।"
+
+<br>
+
+"Together, we move forward by taking everyone with us."
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     HOW IT WORKS
+     ===================================================== -->
+
+<section class="section">
+
+<div class="section-heading">
+
+<div class="small">
+Simple • Transparent • Direct
+</div>
+
+<h2>
+How Your Help Reaches
+</h2>
+
+<p>
+आपका सहयोग सही उद्देश्य तक पहुंचाने की कोशिश की जाती है।
+</p>
+
+</div>
+
+
+<div class="steps">
+
+
+<div class="step">
+
+<div class="step-number">
+1
+</div>
+
+<h3>
+Choose A Cause
+</h3>
+
+<p>
+अपना पसंदीदा उद्देश्य चुनें।
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+2
+</div>
+
+<h3>
+Scan & Pay
+</h3>
+
+<p>
+QR Code स्कैन करें और UPI से भुगतान करें।
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+3
+</div>
+
+<h3>
+Create An Impact
+</h3>
+
+<p>
+आपका सहयोग जरूरतमंद लोगों तक मदद पहुंचाने में योगदान देता है।
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FINAL CTA
+     ===================================================== -->
+
+<div class="final-cta">
+
+<h2>
+Be A Part Of The Change ❤️
+</h2>
+
+<p>
+You don't need to be rich to help someone.
+Even a small contribution can become someone's hope.
+</p>
+
+<p>
+मदद करने के लिए बहुत अमीर होना जरूरी नहीं है।
+आपकी छोटी सी मदद भी किसी की उम्मीद बन सकती है।
+</p>
+
+<a href="#donate" class="primary-btn">
+❤️ Donate Now • अभी योगदान करें
+</a>
+
+</div>
+
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer>
+
+<h2>
+🤝 KARMA FOUNDATION
+</h2>
+
+<div class="footer-line"></div>
+
+<p>
+Helping People • Changing Lives
+</p>
+
+<p>
+लोगों की मदद • बेहतर कल के लिए
+</p>
+
+<br>
+
+<p>
+Together for Humanity • इंसानियत के लिए साथ
+</p>
+
+<p>
+© 2026 Karma Foundation. All Rights Reserved.
+</p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     PAYMENT MODAL
+     ===================================================== -->
+
+<div class="modal" id="paymentModal">
+
+<div class="modal-box">
+
+<button class="close-modal"
+onclick="closeDonation()">
+×
+</button>
+
+
+<h2>
+❤️ Donate Now
+</h2>
+
+<div class="modal-hindi">
+दान करके किसी की मदद करें
+</div>
+
+
+<div class="modal-cause"
+id="modalCause">
+General Support
+</div>
+
+
+<div class="modal-qr">
+
+<img
+id="modalQR"
+src=""
+alt="Donation QR Code"
+>
+
+</div>
+
+
+<div class="modal-upi">
+
+<strong>
+UPI ID
+</strong>
+
+<br>
+
+<span id="modalUPI">
+YOUR-UPI-ID@upi
+</span>
+
+</div>
+
+
+<button class="pay-upi"
+id="payButton"
+onclick="payNow()">
+
+📱 Open UPI App & Pay
+
+</button>
+
+
+<p style="font-size:11px;color:#777;margin-top:10px;">
+Scan the QR code or tap the button to continue.
+<br>
+QR स्कैन करें या UPI App से भुगतान करें।
+</p>
+
+
+</div>
+
+</div>
+
+
+
+<script>
+
+/* =====================================================
+   KARMA FOUNDATION SETTINGS
+
+   IMPORTANT:
+   सिर्फ नीचे वाली UPI ID को अपनी असली UPI ID से बदलना है.
+   ===================================================== */
+
+const UPI_ID = "YOUR-UPI-ID@upi";
+
+const FOUNDATION_NAME = "Karma Foundation";
+
+
+
+/* =====================================================
+   QR GENERATOR
+   ===================================================== */
+
+function createQR(amount){
+
+    let paymentURL =
+        "upi://pay" +
+        "?pa=" + encodeURIComponent(UPI_ID) +
+        "&pn=" + encodeURIComponent(FOUNDATION_NAME) +
+        "&cu=INR";
+
+    if(amount && Number(amount) > 0){
+        paymentURL +=
+            "&am=" + encodeURIComponent(amount);
+    }
+
+    const qrURL =
+        "https://api.qrserver.com/v1/create-qr-code/?size=500x500&margin=10&data=" +
+        encodeURIComponent(paymentURL);
+
+    return {
+        paymentURL: paymentURL,
+        qrURL: qrURL
+    };
+}
+
+
+
+/* =====================================================
+   MAIN QR
+   ===================================================== */
+
+function loadMainQR(){
+
+    const qr = createQR("");
+
+    document.getElementById("mainQR").src = qr.qrURL;
+
+    document.getElementById("mainUPI").textContent = UPI_ID;
+
+}
+
+loadMainQR();
+
+
+
+/* =====================================================
+   DONATION MODAL
+   ===================================================== */
+
+let selectedPaymentURL = "";
+
+function openDonation(cause, hindiCause, amount){
+
+    const qr = createQR(amount || "");
+
+    selectedPaymentURL = qr.paymentURL;
+
+    document.getElementById("modalCause").innerHTML =
+        "<strong>" +
+        cause +
+        "</strong><br>" +
+        hindiCause +
+        (amount ? "<br><b>Donation: ₹" + amount + "</b>" : "");
+
+    document.getElementById("modalQR").src = qr.qrURL;
+
+    document.getElementById("modalUPI").textContent = UPI_ID;
+
+    document.getElementById("paymentModal").classList.add("show");
+
+}
+
+
+
+function closeDonation(){
+
+    document
+        .getElementById("paymentModal")
+        .classList.remove("show");
+
+}
+
+
+
+/* =====================================================
+   CUSTOM DONATION
+   ===================================================== */
+
+function customDonation(){
+
+    const amount =
+        document.getElementById("customAmount").value;
+
+    if(!amount || Number(amount) <= 0){
+
+        alert(
+            "Please enter a valid amount.\nकृपया सही राशि दर्ज करें।"
+        );
+
+        return;
+
+    }
+
+    openDonation(
+        "General Support",
+        "सामान्य सहायता",
+        Number(amount)
+    );
+
+}
+
+
+
+/* =====================================================
+   OPEN UPI APP
+   ===================================================== */
+
+function payNow(){
+
+    if(!selectedPaymentURL){
+        selectedPaymentURL = createQR("").paymentURL;
+    }
+
+    window.location.href = selectedPaymentURL;
+
+}
+
+
+
+/* =====================================================
+   CLOSE MODAL BY CLICKING OUTSIDE
+   ===================================================== */
+
+document
+    .getElementById("paymentModal")
+    .addEventListener("click", function(event){
+
+        if(event.target === this){
+            closeDonation();
+        }
+
+    });
+
+
+
+/* =====================================================
+   ESC KEY
+   ===================================================== */
+
+document.addEventListener("keydown", function(event){
+
+    if(event.key === "Escape"){
+        closeDonation();
+    }
+
+});
+
+</script>
+
+</body>
+</html>
