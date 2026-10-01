@@ -1,364 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Karma Foundation | Helping Hands</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #f7f9fc;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #0b6b4f, #19a974);
-      color: white;
-      padding: 20px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    header h1 {
-      font-size: 30px;
-      margin-bottom: 5px;
-    }
-
-    header p {
-      font-size: 14px;
-    }
-
-    .hero {
-      padding: 70px 20px;
-      text-align: center;
-      background: linear-gradient(
-        rgba(0,0,0,.55),
-        rgba(0,0,0,.55)
-      ),
-      url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1600&q=80");
-      background-size: cover;
-      background-position: center;
-      color: white;
-    }
-
-    .hero h2 {
-      font-size: 38px;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 18px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 13px 25px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      background: #19a974;
-      color: white;
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .title {
-      text-align: center;
-      margin-bottom: 35px;
-    }
-
-    .title h2 {
-      font-size: 30px;
-      color: #0b6b4f;
-    }
-
-    .title p {
-      color: #666;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 15px;
-      padding: 25px;
-      text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,.08);
-      transition: .3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .icon {
-      font-size: 45px;
-      margin-bottom: 12px;
-    }
-
-    .card h3 {
-      color: #0b6b4f;
-      margin-bottom: 10px;
-    }
-
-    .about {
-      background: #eaf8f2;
-      border-radius: 20px;
-      text-align: center;
-      padding: 40px 25px;
-    }
-
-    .donate {
-      background: linear-gradient(135deg, #0b6b4f, #19a974);
-      color: white;
-      text-align: center;
-      border-radius: 20px;
-      padding: 50px 25px;
-    }
-
-    .donate h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-
-    .donate .btn {
-      background: white;
-      color: #0b6b4f;
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    .contact-box {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 5px 20px rgba(0,0,0,.08);
-    }
-
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-      margin-top: 30px;
-    }
-
-    footer p {
-      font-size: 14px;
-      color: #bbb;
-    }
-
-    @media(max-width:600px) {
-      .hero h2 {
-        font-size: 30px;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-
-      header h1 {
-        font-size: 25px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <h1>🤝 KARMA FOUNDATION</h1>
-    <p>Helping People • Changing Lives</p>
-  </header>
-
-  <div class="hero">
-    <h2>Be the Reason Someone Smiles ❤️</h2>
-    <p>
-      Together, we can support children, patients, persons with disabilities,
-      families in need and people facing difficult times.
-    </p>
-
-    <a href="#donate" class="btn">❤️ Donate Now</a>
-  </div>
-
-  <section>
-    <div class="title">
-      <h2>Our Causes</h2>
-      <p>Your support can make a real difference.</p>
-    </div>
-
-    <div class="cards">
-
-      <div class="card">
-        <div class="icon">📚</div>
-        <h3>Child Education</h3>
-        <p>
-          Helping children from needy families continue their education
-          and build a better future.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🎗️</div>
-        <h3>Cancer Support</h3>
-        <p>
-          Supporting families struggling with cancer treatment and
-          essential medical expenses.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">♿</div>
-        <h3>Disability Support</h3>
-        <p>
-          Supporting persons with disabilities with essential help,
-          resources and care.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🍲</div>
-        <h3>Food For The Needy</h3>
-        <p>
-          Providing food and essential support to hungry and
-          underprivileged people.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🏠</div>
-        <h3>Family Assistance</h3>
-        <p>
-          Helping families facing financial difficulties and
-          unexpected emergencies.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">❤️</div>
-        <h3>Emergency Help</h3>
-        <p>
-          Providing support during genuine emergencies and difficult
-          situations.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <section>
-    <div class="about">
-      <div class="title">
-        <h2>About Karma Foundation</h2>
-      </div>
-
-      <p>
-        Karma Foundation is a community initiative created to connect
-        people who want to help with people who genuinely need support.
-        Our goal is to bring hope, dignity and positive change through
-        education, healthcare, food assistance and humanitarian support.
-      </p>
-    </div>
-  </section>
-
-  <section id="donate">
-
-    <div class="donate">
-
-      <h2>❤️ Support Our Mission</h2>
-
-      <p>
-        Your contribution can help provide education, medical support,
-        food and essential assistance to someone in need.
-      </p>
-
-      <a href="#" class="btn" onclick="donateMessage()">
-        💝 Donate Now
-      </a>
-
-    </div>
-
-  </section>
-
-  <section>
-
-    <div class="contact">
-
-      <div class="title">
-        <h2>Need Help or Want to Volunteer?</h2>
-        <p>Get in touch with Karma Foundation.</p>
-      </div>
-
-      <div class="contact-box">
-
-        <h3>🤝 Join Us</h3>
-
-        <p>
-          If you want to volunteer, request assistance or support our
-          mission, please contact our team.
-        </p>
-
-        <a
-          href="https://wa.me/"
-          class="btn"
-          target="_blank">
-          💬 Contact Us on WhatsApp
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <footer>
-
-    <h3>KARMA FOUNDATION</h3>
-
-    <p>
-      Together for humanity. Together for a better tomorrow.
-    </p>
-
-    <p style="margin-top:10px;">
-      © 2026 Karma Foundation. All Rights Reserved.
-    </p>
-
-  </footer>
-
-  <script>
-
-    function donateMessage() {
-      alert(
-        "Thank you for supporting Karma Foundation ❤️\n\n" +
-        "Donation payment details will be added here."
-      );
-    }
-
-  </script>
-
-</body>
-</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Karma Foundation | Helping People • Changing Lives</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  background:#f7faf8;
+  color:#173b2c;
+  line-height:1.6;
+}
+
+header{
+  background:#fff;
+  padding:14px 6%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 15px #00000012;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo-icon{
+  font-size:40px;
+}
+
+.logo h1{
+  font-size:22px;
+  color:#087443;
+}
+
+.logo p{
+  font-size:11px;
+  color:#666;
+}
+
+nav a{
+  text-decoration:none;
+  color:#173b2c;
+  margin:0 9px;
+  font-weight:bold;
+  font-size:14px;
+}
+
+.donate-top{
+  background:#ff5a4f;
+  color:white!important;
+  padding:11px 18px;
+  border-radius:25px;
+}
+
+.hero{
+  min-height:540px;
+  padding:70px 7%;
+  display:flex;
+  align-items:center;
+  color:white;
+  background:
+  linear-gradient(90deg,#064c35dd,#064c3566),
+  url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1800&q=85");
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-content{
+  max-width:650px;
+}
+
+.badge{
+  display:inline-block;
+  background:#ffffff22;
+  border:1px solid #ffffff66;
+  padding:7px 15px;
+  border-radius:20px;
+  margin-bottom:18px;
+}
+
+.hero h2{
+  font-size:48px;
+  line-height:1.1;
+  margin-bottom:12px;
+}
+
+.hero h3{
+  color:#ffd35a;
+  font-size:32px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:18px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 28px;
+  background:#0aaa69;
+  color:white;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  border:0;
+  cursor:pointer;
+  font-size:16px;
+}
+
+section{
+  max-width:1150px;
+  margin:auto;
+  padding:65px 20px;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.title h2{
+  font-size:34px;
+  color:#075e3a;
+}
+
+.title p{
+  color:#666;
+}
+
+.donation{
+  background:white;
+  border-radius:22px;
+  padding:30px;
+  box-shadow:0 8px 30px #0000000
