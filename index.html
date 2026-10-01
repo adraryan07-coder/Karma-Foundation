@@ -3,388 +3,336 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Karma Foundation | कर्मा फाउंडेशन</title>
 
 <style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
-html{
-  scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  color:#173b2b;
-  background:#f7faf7;
-  line-height:1.6;
+font-family:Arial,Helvetica,sans-serif;
+color:#173b2b;
+background:#f7faf7;
+line-height:1.6
 }
 
-a{
-  text-decoration:none;
-  color:inherit;
-}
+a{text-decoration:none;color:inherit}
 
-/* NAVBAR */
 nav{
-  position:sticky;
-  top:0;
-  z-index:50;
-  background:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:14px 6%;
-  box-shadow:0 2px 15px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:50;
+background:#fff;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:14px 6%;
+box-shadow:0 2px 15px rgba(0,0,0,.08)
 }
 
 .logo{
-  font-size:24px;
-  font-weight:800;
-  color:#147a45;
-  text-align:center;
+font-size:24px;
+font-weight:800;
+color:#147a45;
+text-align:center
 }
 
 .logo small{
-  display:block;
-  font-size:11px;
-  color:#777;
-  font-weight:500;
+display:block;
+font-size:11px;
+color:#777;
+font-weight:500
 }
 
 .navlinks{
-  display:flex;
-  gap:22px;
-  align-items:center;
+display:flex;
+gap:22px;
+align-items:center
 }
 
 .navlinks a{
-  font-size:14px;
-  font-weight:600;
+font-size:14px;
+font-weight:600
 }
 
 .btn{
-  border:0;
-  border-radius:30px;
-  padding:13px 23px;
-  background:#13b866;
-  color:white;
-  font-weight:800;
-  cursor:pointer;
-  box-shadow:0 7px 18px rgba(19,184,102,.25);
+border:0;
+border-radius:30px;
+padding:13px 23px;
+background:#13b866;
+color:white;
+font-weight:800;
+cursor:pointer;
+box-shadow:0 7px 18px rgba(19,184,102,.25)
 }
 
-/* HERO */
 .hero{
-  min-height:72vh;
-  display:flex;
-  align-items:center;
-  padding:70px 7%;
-  background:
-    linear-gradient(110deg,rgba(6,61,40,.94),rgba(6,61,40,.55)),
-    url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1800&q=85")
-    center/cover;
+min-height:72vh;
+display:flex;
+align-items:center;
+padding:70px 7%;
+background:
+linear-gradient(110deg,rgba(6,61,40,.94),rgba(6,61,40,.55)),
+url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1800&q=85")
+center/cover
 }
 
 .hero-content{
-  max-width:760px;
-  color:white;
+max-width:760px;
+color:white
 }
 
 .badge{
-  display:inline-block;
-  padding:8px 15px;
-  border:1px solid rgba(255,255,255,.45);
-  border-radius:30px;
-  margin-bottom:18px;
-  background:rgba(255,255,255,.1);
+display:inline-block;
+padding:8px 15px;
+border:1px solid rgba(255,255,255,.45);
+border-radius:30px;
+margin-bottom:18px;
+background:rgba(255,255,255,.1)
 }
 
 h1{
-  font-size:clamp(42px,6vw,76px);
-  line-height:1.05;
-  margin-bottom:18px;
+font-size:clamp(42px,6vw,76px);
+line-height:1.05;
+margin-bottom:18px
 }
 
-h1 span{
-  color:#ffd447;
-}
+h1 span{color:#ffd447}
 
 .hero p{
-  font-size:18px;
-  margin-bottom:18px;
-  max-width:720px;
+font-size:18px;
+margin-bottom:18px;
+max-width:720px
 }
 
 .actions{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
+display:flex;
+gap:12px;
+flex-wrap:wrap
 }
 
 .outline{
-  background:rgba(255,255,255,.12);
-  border:1px solid #fff;
-  color:#fff;
+background:rgba(255,255,255,.12);
+border:1px solid #fff;
+color:#fff
 }
 
-/* SECTIONS */
-section{
-  padding:70px 6%;
-}
+section{padding:70px 6%}
 
 .section-title{
-  text-align:center;
-  margin-bottom:38px;
+text-align:center;
+margin-bottom:38px
 }
 
 .section-title h2{
-  font-size:38px;
-  color:#147a45;
+font-size:38px;
+color:#147a45
 }
 
-.section-title p{
-  color:#68766e;
-}
+.section-title p{color:#68766e}
 
-/* CAUSES */
 .causes{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:22px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:22px
 }
 
 .card{
-  background:white;
-  border-radius:22px;
-  overflow:hidden;
-  box-shadow:0 8px 28px rgba(22,59,37,.08);
-  transition:.2s;
+background:white;
+border-radius:22px;
+overflow:hidden;
+box-shadow:0 8px 28px rgba(22,59,37,.08);
+transition:.2s
 }
 
-.card:hover{
-  transform:translateY(-5px);
-}
+.card:hover{transform:translateY(-5px)}
 
 .card-img{
-  height:155px;
-  display:grid;
-  place-items:center;
-  font-size:58px;
-  background:linear-gradient(135deg,#e4f7ea,#fff4cf);
+height:155px;
+display:grid;
+place-items:center;
+font-size:58px;
+background:linear-gradient(135deg,#e4f7ea,#fff4cf)
 }
 
-.card-body{
-  padding:20px;
-}
+.card-body{padding:20px}
 
 .card h3{
-  font-size:20px;
-  margin-bottom:5px;
+font-size:20px;
+margin-bottom:5px
 }
 
 .card p{
-  font-size:14px;
-  color:#68766e;
-  margin-bottom:14px;
+font-size:14px;
+color:#68766e;
+margin-bottom:14px
 }
 
 .card button{
-  width:100%;
-  border:0;
-  border-radius:12px;
-  padding:11px;
-  background:#147a45;
-  color:white;
-  font-weight:700;
-  cursor:pointer;
+width:100%;
+border:0;
+border-radius:12px;
+padding:11px;
+background:#147a45;
+color:white;
+font-weight:700;
+cursor:pointer
 }
 
-/* IMPACT */
-.impact{
-  background:#eaf7ee;
-}
+.impact{background:#eaf7ee}
 
 .stats{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-  gap:18px;
-  text-align:center;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+gap:18px;
+text-align:center
 }
 
 .stat{
-  background:white;
-  padding:25px;
-  border-radius:18px;
+background:white;
+padding:25px;
+border-radius:18px
 }
 
 .stat strong{
-  font-size:36px;
-  color:#147a45;
-  display:block;
+font-size:36px;
+color:#147a45;
+display:block
 }
 
-/* ABOUT */
 .about{
-  max-width:850px;
-  margin:auto;
-  text-align:center;
-  font-size:17px;
+max-width:850px;
+margin:auto;
+text-align:center;
+font-size:17px
 }
 
-/* FOOTER */
 footer{
-  background:#103c29;
-  color:white;
-  text-align:center;
-  padding:35px 6%;
+background:#103c29;
+color:white;
+text-align:center;
+padding:35px 6%
 }
 
-footer strong{
-  font-size:22px;
-}
+footer strong{font-size:22px}
 
-/* DONATION MODAL */
 .modal{
-  display:none;
-  position:fixed;
-  inset:0;
-  z-index:99999;
-  background:rgba(0,0,0,.82);
-  align-items:center;
-  justify-content:center;
-  padding:18px;
+display:none;
+position:fixed;
+inset:0;
+z-index:99999;
+background:rgba(0,0,0,.82);
+align-items:center;
+justify-content:center;
+padding:18px
 }
 
-.modal.show{
-  display:flex;
-}
+.modal.show{display:flex}
 
 .modal-box{
-  background:white;
-  width:min(430px,100%);
-  max-height:94vh;
-  overflow:auto;
-  border-radius:25px;
-  padding:25px;
-  text-align:center;
-  position:relative;
-  animation:pop .2s ease;
+background:white;
+width:min(430px,100%);
+max-height:94vh;
+overflow:auto;
+border-radius:25px;
+padding:25px;
+text-align:center;
+position:relative;
+animation:pop .2s ease
 }
 
 @keyframes pop{
-  from{
-    transform:scale(.88);
-    opacity:0;
-  }
-  to{
-    transform:scale(1);
-    opacity:1;
-  }
+from{transform:scale(.88);opacity:0}
+to{transform:scale(1);opacity:1}
 }
 
 .close{
-  position:absolute;
-  right:12px;
-  top:10px;
-  border:0;
-  background:#eee;
-  border-radius:50%;
-  width:38px;
-  height:38px;
-  font-size:25px;
-  cursor:pointer;
+position:absolute;
+right:12px;
+top:10px;
+border:0;
+background:#eee;
+border-radius:50%;
+width:38px;
+height:38px;
+font-size:25px;
+cursor:pointer
 }
 
 .modal h2{
-  color:#147a45;
-  margin:4px 35px 4px;
+color:#147a45;
+margin:4px 35px 4px
 }
 
 .modal .hi{
-  color:#666;
-  margin-bottom:15px;
+color:#666;
+margin-bottom:15px
 }
 
 .qr{
-  width:285px;
-  max-width:85%;
-  height:auto;
-  border-radius:10px;
-  margin:5px auto 12px;
-  display:block;
+width:300px;
+max-width:88%;
+height:auto;
+border-radius:8px;
+margin:8px auto 14px;
+display:block
 }
 
 .scan{
-  font-weight:800;
-  font-size:19px;
+font-weight:800;
+font-size:19px
 }
 
 .note{
-  font-size:13px;
-  color:#777;
-  margin-top:5px;
+font-size:13px;
+color:#777;
+margin-top:5px
 }
 
-/* MOBILE */
+.upi{
+margin:12px auto;
+padding:10px 14px;
+background:#f1f7f3;
+border-radius:12px;
+font-weight:700;
+color:#147a45;
+word-break:break-all
+}
+
 @media(max-width:700px){
 
-  nav{
-    padding:12px 5%;
-  }
+nav{padding:12px 5%}
 
-  .logo{
-    font-size:18px;
-  }
+.logo{font-size:18px}
 
-  .logo small{
-    font-size:9px;
-  }
+.logo small{font-size:9px}
 
-  .navlinks{
-    display:none;
-  }
+.navlinks{display:none}
 
-  .hero{
-    padding:55px 6%;
-    min-height:78vh;
-  }
+.hero{
+padding:55px 6%;
+min-height:78vh
+}
 
-  h1{
-    font-size:43px;
-  }
+h1{font-size:43px}
 
-  .hero p{
-    font-size:16px;
-  }
+.hero p{font-size:16px}
 
-  section{
-    padding:55px 5%;
-  }
+section{padding:55px 5%}
 
-  .section-title h2{
-    font-size:30px;
-  }
+.section-title h2{font-size:30px}
 
-  .modal-box{
-    padding:22px 15px;
-  }
+.modal-box{padding:22px 15px}
 
-  .qr{
-    width:270px;
-  }
+.qr{width:280px}
+
 }
 </style>
 </head>
 
-
 <body>
 
-<!-- NAVBAR -->
 <nav>
 
 <a class="logo" href="#home">
@@ -393,6 +341,7 @@ footer strong{
 </a>
 
 <div class="navlinks">
+
 <a href="#home">Home</a>
 <a href="#causes">Our Causes</a>
 <a href="#impact">Impact</a>
@@ -401,12 +350,11 @@ footer strong{
 <button class="btn" onclick="openDonate()">
 ❤️ Donate Now
 </button>
-</div>
 
+</div>
 </nav>
 
 
-<!-- HERO -->
 <header class="hero" id="home">
 
 <div class="hero-content">
@@ -452,7 +400,6 @@ Explore Causes • हमारी सेवाएं
 </header>
 
 
-<!-- CAUSES -->
 <section id="causes">
 
 <div class="section-title">
@@ -471,12 +418,9 @@ Our Causes • हमारे सेवा कार्य
 <div class="causes">
 
 
-<!-- FOOD -->
 <article class="card">
 
-<div class="card-img">
-🍱
-</div>
+<div class="card-img">🍱</div>
 
 <div class="card-body">
 
@@ -485,8 +429,7 @@ Food Support • भोजन सहायता
 </h3>
 
 <p>
-जरूरतमंद और भूखे लोगों तक भोजन पहुँचाने
-में सहयोग करें।
+जरूरतमंद और भूखे लोगों तक भोजन पहुँचाने में सहयोग करें।
 </p>
 
 <button onclick="openDonate()">
@@ -497,12 +440,10 @@ Donate for Food
 </article>
 
 
-<!-- EDUCATION -->
+
 <article class="card">
 
-<div class="card-img">
-📚
-</div>
+<div class="card-img">📚</div>
 
 <div class="card-body">
 
@@ -511,8 +452,7 @@ Child Education • बच्चों की पढ़ाई
 </h3>
 
 <p>
-बच्चों की शिक्षा, किताबें और जरूरी
-learning support में मदद करें।
+बच्चों की शिक्षा, किताबें और जरूरी learning support में मदद करें।
 </p>
 
 <button onclick="openDonate()">
@@ -523,12 +463,10 @@ Support Education
 </article>
 
 
-<!-- MEDICAL -->
+
 <article class="card">
 
-<div class="card-img">
-🏥
-</div>
+<div class="card-img">🏥</div>
 
 <div class="card-body">
 
@@ -537,8 +475,7 @@ Medical & Cancer • चिकित्सा सहायता
 </h3>
 
 <p>
-जरूरतमंद मरीजों के इलाज और medical
-support के लिए योगदान करें।
+जरूरतमंद मरीजों के इलाज और medical support के लिए योगदान करें।
 </p>
 
 <button onclick="openDonate()">
@@ -549,12 +486,10 @@ Help Medical Care
 </article>
 
 
-<!-- DISABILITY -->
+
 <article class="card">
 
-<div class="card-img">
-♿
-</div>
+<div class="card-img">♿</div>
 
 <div class="card-body">
 
@@ -563,8 +498,7 @@ Disability Support • दिव्यांग सहायता
 </h3>
 
 <p>
-Wheelchair, care kits और जरूरी सहायता
-उपलब्ध कराने में सहयोग करें।
+Wheelchair, care kits और जरूरी सहायता उपलब्ध कराने में सहयोग करें।
 </p>
 
 <button onclick="openDonate()">
@@ -575,12 +509,10 @@ Support Disability
 </article>
 
 
-<!-- FLOOD -->
+
 <article class="card">
 
-<div class="card-img">
-🌊
-</div>
+<div class="card-img">🌊</div>
 
 <div class="card-body">
 
@@ -589,8 +521,7 @@ Flood Relief • बाढ़ राहत
 </h3>
 
 <p>
-बाढ़ प्रभावित परिवारों तक राहत और
-जरूरी सामान पहुँचाने में मदद करें।
+बाढ़ प्रभावित परिवारों तक राहत और जरूरी सामान पहुँचाने में मदद करें।
 </p>
 
 <button onclick="openDonate()">
@@ -601,12 +532,10 @@ Help Flood Relief
 </article>
 
 
-<!-- HOUSING -->
+
 <article class="card">
 
-<div class="card-img">
-🏠
-</div>
+<div class="card-img">🏠</div>
 
 <div class="card-body">
 
@@ -615,8 +544,7 @@ Housing Support • आवास सहायता
 </h3>
 
 <p>
-बेघर और जरूरतमंद परिवारों के लिए
-सुरक्षित घर बनाने में सहयोग करें।
+बेघर और जरूरतमंद परिवारों के लिए सुरक्षित घर बनाने में सहयोग करें।
 </p>
 
 <button onclick="openDonate()">
@@ -626,12 +554,12 @@ Support Housing
 </div>
 </article>
 
-</div>
 
+</div>
 </section>
 
 
-<!-- IMPACT -->
+
 <section class="impact" id="impact">
 
 <div class="section-title">
@@ -674,11 +602,10 @@ Disability Support<br>
 </div>
 
 </div>
-
 </section>
 
 
-<!-- ABOUT -->
+
 <section id="about">
 
 <div class="section-title">
@@ -689,6 +616,7 @@ About Karma Foundation
 
 </div>
 
+
 <div class="about">
 
 <p>
@@ -696,8 +624,8 @@ About Karma Foundation
 </p>
 
 <p>
-Karma Foundation का उद्देश्य जरूरतमंद लोगों तक
-मदद पहुँचाने के प्रयासों को मजबूत करना है।
+Karma Foundation का उद्देश्य जरूरतमंद लोगों तक मदद
+पहुँचाने के प्रयासों को मजबूत करना है।
 आपका सहयोग हमारे सहायता कार्यों को आगे बढ़ाने
 में योगदान देता है।
 </p>
@@ -711,11 +639,10 @@ Karma Foundation का उद्देश्य जरूरतमंद लो
 </p>
 
 </div>
-
 </section>
 
 
-<!-- FOOTER -->
+
 <footer>
 
 <strong>
@@ -723,27 +650,21 @@ Karma Foundation का उद्देश्य जरूरतमंद लो
 </strong>
 
 <p>
-Helping People • Changing Lives
-|
+Helping People • Changing Lives |
 लोगों की मदद • ज़िंदगी में बदलाव
 </p>
 
 </footer>
 
 
+
 <!-- DONATION POPUP -->
-<div
-class="modal"
-id="donationModal"
-onclick="outsideClose(event)"
->
+
+<div class="modal" id="donationModal" onclick="outsideClose(event)">
 
 <div class="modal-box">
 
-<button
-class="close"
-onclick="closeDonate()"
->
+<button class="close" onclick="closeDonate()">
 ×
 </button>
 
@@ -760,10 +681,11 @@ Donate to Karma Foundation
 </div>
 
 
-<!-- YOUR UPI QR -->
+<!-- QR CODE -->
+
 <img
 class="qr"
-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA"
+src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADJ0lEQVR4nO2cX4rbMBCHv6kMebRhD5CjKDfokUqP1BtYR9kDLFiPAZnpg0Z2shTKdlMn64weTBznwyP8YzR/5Ijy4ZG+fZwBhxxyyCGHHHJon5DY6JATs5AGkBMgMgDk9oPTXcxzaHsoqqrqtHydO3TMIqqvHUBQVVW9hrYzz6HtodwcQJKuXesLpMFORNYLX2RODt0C0pGg8mOaq0Dkh57l/9zJoceEunfnQj+h6Vg6kgQlDW83upNDXwNqiugVyKAwd8TXDugnpH4CLitZDz4nh24AJRERGUBO+aBAUJMFQeXEXFONe5nn0NY+YnUAmo4FTcezQH8WJYN5kHuY59DmEDWrjFrsPE6h+QhVJU5BdexViROWpY4PPieHPgPR6gz24FW1oCPUQ01BoxaTiiti91BVhGrzDFUWY1/swthfCcQVsXtoyTUKCrMoWVAIKhCKxGlG4vRS6mFr8xzaHGqrRq+qI8HCBfqCuYe+sH7nPmL/UIssp1BlUbWhU2tkVAkALcpwRewcWuIIqDoYWyhZG1+xepACS7vLFbFrqClCi3mBkUu/YRIgWEHCV43dQzWytIgxC8RpQOjfuuYZ5vetj4efk0OfgRZ/wJJuroHDpd+o0aavGruH2kPGGuFVGyPQipQtw1CvUD0FZKtGnAYk6iyk49rDCEXILyq1H/rrDuY5tDnUOl0ZSGI9L4k6d8AspKOlGaTjWXRr8xzaHLqOI6waZXko66dwFWo8+JwcugXUF0hysHqE7a4MCv1Z1q11crqTeQ5tDuWO+vRPTQd2yAfVn0PQdQ/ul5mTQ/8CWbEhHUsncFALJvJBJU5zvSi1YNFPeKdr/9BSs7RhZYepJaOAlbLXPNTjiD1DVzVLQoF8UNL30gn9m9SNuOSXAotAHn1ODt0Aiq3dZa7g9aA65o4WYBQg+87bZ4Auss/WErfadW2Orxsw8W74k0K5wzbmZ7Fco45XfxP4GaH6lp8Ms9iLwdYAbWK4s3kObQatLU5oqwZWuJRT7v4IbWeeQ5tBy+58wLKJy82Wl29peBzxFJDo33/zfvg/kznkkEMOOeSQQwC/Abc2Vgyn4Lv4AAAAAElFTkSuQmCC"
 alt="Karma Foundation UPI QR Code"
 >
 
@@ -776,13 +698,17 @@ alt="Karma Foundation UPI QR Code"
 QR कोड को किसी भी UPI App से scan करके payment करें।
 </div>
 
+<div class="upi">
+UPI ID: q72662595@ybl
+</div>
+
 <div class="note">
 PhonePe • Google Pay • Paytm • BHIM • Other UPI Apps
 </div>
 
 </div>
-
 </div>
+
 
 
 <script>
@@ -814,26 +740,19 @@ document.body.style.overflow="";
 function outsideClose(event){
 
 if(event.target.id==="donationModal"){
-
 closeDonate();
-
 }
 
 }
 
 
-document.addEventListener(
-"keydown",
-function(event){
+document.addEventListener("keydown",function(event){
 
 if(event.key==="Escape"){
-
 closeDonate();
-
 }
 
-}
-);
+});
 
 </script>
 
